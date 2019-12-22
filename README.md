@@ -22,7 +22,7 @@ P1   : DF40HC(4.0)-60DS-0.4V(51).
 R10 R11: 47K resistance, 10k may woks too.
 
 c9 c10 2.2uf.
-c1    10uf, refer to ti's design in "C:\ti\ccs900\c2000\C2000Ware_1_00_06_00\boards\TIDesigns\F28379D_EMIF_DC". the c104 in sch ig bug
+c1    10uf, refer to ti's design in "C:\ti\ccs900\c2000\C2000Ware_1_00_06_00\boards\TIDesigns\F28379D_EMIF_DC". 
 
 
 
@@ -46,8 +46,8 @@ The source must be modified  to test the whole 256k x 16bit   space.
    
    to 
    
-    GPIO_SetupPinMux(88,cpu_sel,2);   //a15
-    GPIO_SetupPinMux(89,cpu_sel,2);   //a16
+    GPIO_SetupPinMux(88,cpu_sel,2);   //address line a15
+    GPIO_SetupPinMux(89,cpu_sel,2);   //address line a16
    
    
  2   256k x 16bit sram can  contain  128k(0x20000)  32bit elements.  change ram size configuration in 
